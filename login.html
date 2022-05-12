@@ -1,0 +1,56 @@
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    form
+    {
+     margin-left: 260px;
+    
+    }
+    #f
+    {
+       
+        background-image: url('seven.jpg');
+        background-repeat: no-repeat;
+        /* border: double 5px;
+      border-radius: 10px; */
+    }
+  
+   
+   
+</style>
+
+<div id="f"  style="margin-left: 320px; height: 550px; width: 700px;">    
+<h1 style="color: chartreuse; margin-left: 140px; ">Uk Ultimate Guide - Login Page</h1>
+ 
+<!-- <h2 style="color: chartreuse; margin-left: 160px; "></h2> -->
+<br>
+<form class="form-inline" name="login" method="post" action="login.php" onsubmit="return validate();">
+<input type="text" class="form-control" placeholder="Username" name="username" id="user">
+<br><br>
+<input type="password" class="form-control" placeholder="Password" name="password" id="pass">&nbsp;&nbsp;&nbsp;<input type="submit" class="btn btn-success" value="Login">
+<br><br>
+
+</form>
+
+</div>
+<script>
+    function validate()
+     {
+
+    var f=document.forms["login"];
+    var x=f["username"].value;    
+    var y=f["password"].value;    
+
+    // alert(x+"   "+y);
+    if(x=="" || y=="")
+    {
+        alert("Please Enter Form Fields");
+    return false;
+    }
+
+}
+</script>
+
+
+</body>

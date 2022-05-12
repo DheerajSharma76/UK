@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    #f
+    {
+       
+        background-image: url('bg.jpg');
+        background-repeat: no-repeat;
+    
+    }
+    form
+    {
+     margin-left: 80px;
+    }
+  
+</style>
+
+<div id="f" style=" margin-left: 320px;">    
+    <br>
+<h1 style="color: aqua; margin-left: 50px; ">Uk Ultimate Guide</h1>
+
+<h2 style="color: aqua; margin-left: 50px;">Registration Page</h2>
+<br>
+<form class="form-inline" method="post" name="login" action="reg.php" onsubmit="return validate();">
+    <input type="text" name="name" placeholder="Full Name" id="name" class="form-control">
+    <br><br>
+    <input type="email" placeholder="Email" name="email" id="em" class="form-control">
+    <br><br>
+<input type="text" class="form-control" placeholder="Username" name="username" id="user">
+<br><br>
+<input type="password" class="form-control" placeholder="Password" name="password" id="pass">
+<br><br>
+<input type="password" class="form-control" placeholder="Re-enter Password" name="rpassword" id="rpass">&nbsp;&nbsp;&nbsp;<input type="submit" class="btn btn-success" value="Register">
+<br><br>
+
+</form>
+<br><br>
+<script>
+    var f=document.forms["login"];
+
+  function validate()
+   {
+
+  
+  var x=f["username"].value;    
+  var y=f["password"].value;    
+  var a=f["name"].value;    
+  var b=f["email"].value; 
+  var c=f["rpassword"].value; 
+
+  // alert(x+"   "+y);
+  if(x=="" || y=="" || a=="" || b=="" ||c=="")
+  {
+      alert("Please Enter Form Fields");
+  return false;
+  }
+else
+{
+    return cp(y,c);
+}
+}
+
+function cp(y,c) {
+   if(y!=c)
+    {
+        alert("Password does not Matches");
+        return false;
+    }
+ else
+ {
+    alert("Registration Successfull");
+    return true;
+ }
+}
+</script>
+</div>
+</body>

@@ -1,0 +1,7 @@
+No of Days,Interest,Total Places,Day 1,Day 2,Day 3,Budget
+2,streets;bridges,London bridge;B;C;D,London bridge;B,C;D,,60
+2,streets;bridges;park,A;B;C;D,A;B,C;D,,70
+2,streets;bridges;park;building,A;B;C;D,A;B,C;D,,75
+3,streets;bridges,A;B;London bridge;D;E,A;B,London bridge;D,E,99
+3,streets;bridges;park,A;B;C;D;E,A;B,C;D,E,102
+3,streets;bridges;park;building,A;B;C;D;E;F,A;B,C;D,E,105
